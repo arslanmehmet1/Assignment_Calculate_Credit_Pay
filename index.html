@@ -10,6 +10,24 @@
   <body>
     <div class="input">
       <h1>Kredi Hesaplama Aracı</h1>
+      <form action="">
+        <label for="credit">Kredi :</label><br />
+        <select name="kredi" id="credit">
+          <option value="disabled" disabled selected>Seçiniz</option>
+          <option value="Konut_Kredisi">Konut Kredisi</option>
+          <option value="ihtiyaç_Kredisi">İhtiyaç Kredisi</option>
+          <option value="Arac_Kredisi">Araç Kredisi</option>
+        </select>
+        <br />
+
+        <label for="vade">Vade :</label> <br />
+        <input type="number" name="vade" id="vade" /><br />
+        <label for="tutar">Tutar :</label><br />
+        <input type="number" name="miktar" id="tutar" /><br />
+        <button>Hesapla</button>
+      </form>
     </div>
+    <div class="hesaplama"></div>
+    <script src="app.js"></script>
   </body>
 </html>
